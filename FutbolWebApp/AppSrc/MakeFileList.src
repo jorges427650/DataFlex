@@ -1,0 +1,83 @@
+Set_Filelist "C:\Dev\Practicas\Workspaces\FutbolWebApp\Data\Filelist.cfg"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 1 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 1 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 1 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 2 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 2 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 2 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 3 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 3 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 3 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 4 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 4 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 4 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 5 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 5 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 5 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 6 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 6 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 6 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 7 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 7 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 7 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 8 to ""
+Set_Attribute DF_FILE_ROOT_NAME of 8 to ""
+Set_Attribute DF_FILE_DISPLAY_NAME of 8 to ""
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 101 to "Entrenador"
+Set_Attribute DF_FILE_ROOT_NAME of 101 to "Entrenador.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 101 to "Entrenador"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 102 to "Jugador"
+Set_Attribute DF_FILE_ROOT_NAME of 102 to "Jugador.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 102 to "Jugador"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 103 to "Posicion"
+Set_Attribute DF_FILE_ROOT_NAME of 103 to "Posicion.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 103 to "Posicion"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 104 to "Equipo"
+Set_Attribute DF_FILE_ROOT_NAME of 104 to "Equipo.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 104 to "Equipo"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 105 to "Liga"
+Set_Attribute DF_FILE_ROOT_NAME of 105 to "Liga.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 105 to "Liga"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 106 to "HijoEntrenador"
+Set_Attribute DF_FILE_ROOT_NAME of 106 to "HijoEntrenador.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 106 to "HijoEntrenador"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 107 to "HijoJugador"
+Set_Attribute DF_FILE_ROOT_NAME of 107 to "HijoJugador.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 107 to "HijoJugador"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 108 to "JugadorPosicion"
+Set_Attribute DF_FILE_ROOT_NAME of 108 to "JugadorPosicion.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 108 to "JugadorPosicion"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 109 to "NietoDeHijos"
+Set_Attribute DF_FILE_ROOT_NAME of 109 to "NietoDeHijos.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 109 to "NietoDeHijos"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 110 to "WebAppSession"
+Set_Attribute DF_FILE_ROOT_NAME of 110 to "WebAppSession.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 110 to "WebAppSession"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 253 to "CodeType"
+Set_Attribute DF_FILE_ROOT_NAME of 253 to "CodeType.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 253 to "CodeType"
+
+Set_Attribute DF_FILE_LOGICAL_NAME of 254 to "CodeMast"
+Set_Attribute DF_FILE_ROOT_NAME of 254 to "CodeMast.int"
+Set_Attribute DF_FILE_DISPLAY_NAME of 254 to "CodeMast"
+
+Abort

@@ -1,0 +1,104 @@
+Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebForm.pkg
+Use cWebGroup.pkg
+Use cWebMenuGroup.pkg
+Use cWebMenuItem.pkg
+Use cJugadorDataDictionary.dd
+
+Object oJugadorZoom is a cWebView
+    Object oJugador_DD is a cJugadorDataDictionary
+    End_Object
+
+    Set Main_DD to oJugador_DD
+    Set Server to oJugador_DD
+    Set peWebViewStyle to wvsDrillDown
+    Set peViewType to vtZoom
+    Set pbShowCaption to False
+    Set Verify_Save_msg to 0
+    Set psCaption to "Jugador"
+    Set piMaxWidth to 1024
+    Set piColumnCount to 12
+
+    Object oWebMainPanel is a cWebPanel
+        Set piColumnCount to 12
+        WebSetResponsive piColumnCount rmMobile to 6
+
+        Object oDatos is a cWebGroup
+            Set piColumnSpan to 0
+            Set piColumnCount to 12
+            Set psCaption to "Jugador"
+            WebSetResponsive piColumnCount rmMobile to 6
+
+            Object oID is a cWebForm
+                Entry_Item Jugador.ID
+                Set psLabel to "ID"
+                Set peLabelPosition to lpTop
+                Set piColumnSpan to 3
+                Set pbReadOnly to True
+            End_Object
+
+            Object oNombre is a cWebForm
+                Entry_Item Jugador.Nombre
+                Set psLabel to "Nombre"
+                Set peLabelPosition to lpTop
+                Set piColumnSpan to 9
+            End_Object
+
+            Object oApellido is a cWebForm
+                Entry_Item Jugador.Apellido
+                Set psLabel to "Apellido"
+                Set peLabelPosition to lpTop
+                Set piColumnSpan to 6
+            End_Object
+
+            Object oNacionalidad is a cWebForm
+                Entry_Item Jugador.Nacionalidad
+                Set psLabel to "Nacionalidad"
+                Set peLabelPosition to lpTop
+                Set piColumnSpan to 6
+            End_Object
+
+            Object oEquipoID is a cWebForm
+                Entry_Item Jugador.EquipoID
+                Set psLabel to "EquipoID"
+                Set peLabelPosition to lpTop
+                Set piColumnSpan to 6
+            End_Object
+        End_Object
+    End_Object
+
+    Object oActionGroup is a cWebMenuGroup
+        Set psGroupName to "MainActions"
+        Object oSaveBtn is a cWebMenuItem
+            Set psCaption to C_$Save
+            Set psCSSClass to "WebSaveMenuItem"
+            Procedure OnClick
+                Send Request_Save
+            End_Procedure
+        End_Object
+        Object oDeleteBtn is a cWebMenuItem
+            Set psCaption to C_$Delete
+            Set psCSSClass to "WebDeleteMenuItem"
+            Set peActionDisplay to adMenu
+            Procedure OnClick
+                Send Request_Delete
+            End_Procedure
+        End_Object
+        Object oCancelChangesBtn is a cWebMenuItem
+            Set psCaption to C_$ToolTipClear
+            Set peActionDisplay to adMenu
+            Procedure OnClick
+                Send RefreshRecord
+            End_Procedure
+        End_Object
+    End_Object
+
+    Procedure OnViewSaved Handle hoServer Boolean bChanged
+        Send NavigateClose Self
+    End_Procedure
+
+    Procedure OnViewDeleted Handle hoDDO
+        Send NavigateClose Self
+    End_Procedure
+End_Object

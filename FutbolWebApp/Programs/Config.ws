@@ -1,0 +1,13 @@
+[Workspace]
+Home=C:\Dev\Practicas\Workspaces\FutbolWebApp
+AppSrcPath=.\AppSrc
+AppHtmlPath=.\AppHTML
+BitmapPath=.\Bitmaps
+DataPath=.\Data
+DdSrcPath=.\DDSrc
+FileList=.\Data\Filelist.cfg
+HelpPath=.\Help
+IdeSrcPath=.\IDESrc
+ProgramPath=.\Programs
+Description=FutbolWebApp
+ConnectionIni=.\Data\DFConnId.ini

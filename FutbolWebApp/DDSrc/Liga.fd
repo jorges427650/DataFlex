@@ -1,0 +1,7 @@
+#REPLACE FILE105 Liga
+#REPLACE Liga.File_Number |CI105
+#REPLACE Liga.ID |FN105,1
+#REPLACE Liga.Nombre |FS105,2
+#REPLACE Liga.Pais |FS105,3
+#REPLACE Liga.Equipos |FN105,4
+#REPLACE Liga.EquiposMax |FN105,5

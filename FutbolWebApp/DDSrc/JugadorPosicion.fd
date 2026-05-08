@@ -1,0 +1,5 @@
+#REPLACE FILE108 JugadorPosicion
+#REPLACE JugadorPosicion.File_Number |CI108
+#REPLACE JugadorPosicion.ID |FN108,1
+#REPLACE JugadorPosicion.JugadorID |FN108,2
+#REPLACE JugadorPosicion.PosicionID |FN108,3

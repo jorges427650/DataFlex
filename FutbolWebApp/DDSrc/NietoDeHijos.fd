@@ -1,0 +1,6 @@
+#REPLACE FILE109 NietoDeHijos
+#REPLACE NietoDeHijos.File_Number |CI109
+#REPLACE NietoDeHijos.ID |FN109,1
+#REPLACE NietoDeHijos.Name |FS109,2
+#REPLACE NietoDeHijos.HijoJugadorID |FN109,3
+#REPLACE NietoDeHijos.HijoEntrenadorID |FN109,4

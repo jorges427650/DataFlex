@@ -1,0 +1,5 @@
+#REPLACE FILE107 HijoJugador
+#REPLACE HijoJugador.File_Number |CI107
+#REPLACE HijoJugador.ID |FN107,1
+#REPLACE HijoJugador.Name |FS107,2
+#REPLACE HijoJugador.JugadorID |FN107,3

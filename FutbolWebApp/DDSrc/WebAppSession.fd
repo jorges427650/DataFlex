@@ -1,0 +1,11 @@
+#REPLACE FILE110 WebAppSession
+#REPLACE WebAppSession.File_Number |CI110
+#REPLACE WebAppSession.SessionKey |FS110,1
+#REPLACE WebAppSession.CreateDate |FD110,2
+#REPLACE WebAppSession.CreateTime |FS110,3
+#REPLACE WebAppSession.LastAccessDate |FD110,4
+#REPLACE WebAppSession.LastAccessTime |FS110,5
+#REPLACE WebAppSession.UseCount |FN110,6
+#REPLACE WebAppSession.RemoteAddress |FS110,7
+#REPLACE WebAppSession.LoginName |FS110,8
+#REPLACE WebAppSession.Active |FS110,9

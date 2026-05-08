@@ -1,0 +1,83 @@
+Use cWebView.pkg
+Use cWebList.pkg
+Use cWebColumn.pkg
+Use cWebColumnButton.pkg
+Use cWebMenuGroup.pkg
+Use cWebMenuItem.pkg
+Use cPosicionDataDictionary.dd
+
+Object oPosicionSelect is a cWebView
+    Object oPosicion_DD is a cPosicionDataDictionary
+    End_Object
+
+    Set Main_DD to oPosicion_DD
+    Set Server to oPosicion_DD
+    Set peWebViewStyle to wvsDrillDown
+    Set peViewType to vtSelect
+    Set psCaption to "Posiciones"
+    Set piMaxWidth to 1024
+    Set piColumnCount to 6
+
+    Procedure OnLoad
+        Send Find of oPosicion_DD FIRST_RECORD 1
+    End_Procedure
+
+    Object oList is a cWebList
+        Set pbFillHeight to True
+        Set piColumnSpan to 0
+        Set pbServerOnRowClick to True
+        Set psCSSClass to "MobileList"
+        Set piSortColumn to 0
+        Set pbShowHeader to False
+
+        WebRegisterPath ntNavigateForward oPosicionZoom
+
+        Object oNombre is a cWebColumn
+            Entry_Item Posicion.Nombre
+            Set psCaption to "Nombre"
+            Set psCSSClass to "RowCaption"
+        End_Object
+
+        Object oDetalle is a cWebColumnButton
+            Set piWidth to 45
+            Set pbFixedWidth to True
+            Set psCaption to ""
+            Set pbResizable to False
+            Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
+            Set peAlign to alignRight
+            WebRegisterPath ntNavigateForward oPosicionZoom
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Move True to NavigateData.bReadOnly
+            End_Procedure
+        End_Object
+
+        Procedure OnRowClick String sRowID
+            Send NavigatePath
+        End_Procedure
+    End_Object
+
+    Object oActionGroup is a cWebMenuGroup
+        Set psGroupName to "MainActions"
+        Object oSearch is a cWebMenuItem
+            Set psCaption to C_$Search
+            Set psCSSClass to "WebPromptMenuItem"
+            Procedure OnClick
+                Send Search of oList
+            End_Procedure
+        End_Object
+        Object oNewButton is a cWebMenuItem
+            Set psCaption to C_$New
+            Set psCSSClass to "WebClearMenuItem"
+            WebRegisterPath ntNavigateForward oPosicionZoom
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Move True to NavigateData.bNewRecord
+            End_Procedure
+        End_Object
+    End_Object
+End_Object

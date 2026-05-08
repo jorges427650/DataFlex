@@ -1,0 +1,7 @@
+#REPLACE FILE101 Entrenador
+#REPLACE Entrenador.File_Number |CI101
+#REPLACE Entrenador.ID |FN101,1
+#REPLACE Entrenador.Nombre |FS101,2
+#REPLACE Entrenador.Apellido |FS101,3
+#REPLACE Entrenador.Nacionalidad |FS101,4
+#REPLACE Entrenador.EquipoID |FN101,5
